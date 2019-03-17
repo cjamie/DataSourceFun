@@ -14,6 +14,10 @@
 		18C31167223D7E1F00B1F920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C31165223D7E1F00B1F920 /* LaunchScreen.storyboard */; };
 		18C31172223D7E1F00B1F920 /* DataSourceFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C31171223D7E1F00B1F920 /* DataSourceFunTests.swift */; };
 		18C3117D223D7E4A00B1F920 /* MyDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3117C223D7E4A00B1F920 /* MyDatasource.swift */; };
+		18C31180223DA7F400B1F920 /* RowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3117F223DA7F400B1F920 /* RowsViewModel.swift */; };
+		18C31183223DBDA700B1F920 /* Boxed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C31182223DBDA700B1F920 /* Boxed.swift */; };
+		18C31185223DBE5400B1F920 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C31184223DBE5400B1F920 /* MyCell.swift */; };
+		18C31187223DC52500B1F920 /* UIVIew+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C31186223DC52500B1F920 /* UIVIew+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		18C31171223D7E1F00B1F920 /* DataSourceFunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceFunTests.swift; sourceTree = "<group>"; };
 		18C31173223D7E1F00B1F920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C3117C223D7E4A00B1F920 /* MyDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatasource.swift; sourceTree = "<group>"; };
+		18C3117F223DA7F400B1F920 /* RowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowsViewModel.swift; sourceTree = "<group>"; };
+		18C31182223DBDA700B1F920 /* Boxed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxed.swift; sourceTree = "<group>"; };
+		18C31184223DBE5400B1F920 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		18C31186223DC52500B1F920 /* UIVIew+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,9 @@
 				18C3115C223D7E1D00B1F920 /* AppDelegate.swift */,
 				18C3115E223D7E1D00B1F920 /* ViewController.swift */,
 				18C3117C223D7E4A00B1F920 /* MyDatasource.swift */,
+				18C31184223DBE5400B1F920 /* MyCell.swift */,
+				18C3117F223DA7F400B1F920 /* RowsViewModel.swift */,
+				18C31181223DBD8B00B1F920 /* Utility */,
 				18C31160223D7E1D00B1F920 /* Main.storyboard */,
 				18C31163223D7E1F00B1F920 /* Assets.xcassets */,
 				18C31165223D7E1F00B1F920 /* LaunchScreen.storyboard */,
@@ -97,6 +108,15 @@
 				18C31173223D7E1F00B1F920 /* Info.plist */,
 			);
 			path = DataSourceFunTests;
+			sourceTree = "<group>";
+		};
+		18C31181223DBD8B00B1F920 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				18C31182223DBDA700B1F920 /* Boxed.swift */,
+				18C31186223DC52500B1F920 /* UIVIew+Helpers.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C3115F223D7E1D00B1F920 /* ViewController.swift in Sources */,
+				18C31187223DC52500B1F920 /* UIVIew+Helpers.swift in Sources */,
+				18C31185223DBE5400B1F920 /* MyCell.swift in Sources */,
+				18C31183223DBDA700B1F920 /* Boxed.swift in Sources */,
+				18C31180223DA7F400B1F920 /* RowsViewModel.swift in Sources */,
 				18C3115D223D7E1D00B1F920 /* AppDelegate.swift in Sources */,
 				18C3117D223D7E4A00B1F920 /* MyDatasource.swift in Sources */,
 			);
