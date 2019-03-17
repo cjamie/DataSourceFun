@@ -13,7 +13,7 @@
 		18C31164223D7E1F00B1F920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C31163223D7E1F00B1F920 /* Assets.xcassets */; };
 		18C31167223D7E1F00B1F920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C31165223D7E1F00B1F920 /* LaunchScreen.storyboard */; };
 		18C31172223D7E1F00B1F920 /* DataSourceFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C31171223D7E1F00B1F920 /* DataSourceFunTests.swift */; };
-		18C3117D223D7E4A00B1F920 /* MyDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3117C223D7E4A00B1F920 /* MyDatasource.swift */; };
+		18C3117D223D7E4A00B1F920 /* MyDatasourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3117C223D7E4A00B1F920 /* MyDatasourceAndDelegate.swift */; };
 		18C31180223DA7F400B1F920 /* RowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3117F223DA7F400B1F920 /* RowsViewModel.swift */; };
 		18C31183223DBDA700B1F920 /* Boxed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C31182223DBDA700B1F920 /* Boxed.swift */; };
 		18C31185223DBE5400B1F920 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C31184223DBE5400B1F920 /* MyCell.swift */; };
@@ -41,7 +41,7 @@
 		18C3116D223D7E1F00B1F920 /* DataSourceFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataSourceFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C31171223D7E1F00B1F920 /* DataSourceFunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceFunTests.swift; sourceTree = "<group>"; };
 		18C31173223D7E1F00B1F920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18C3117C223D7E4A00B1F920 /* MyDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatasource.swift; sourceTree = "<group>"; };
+		18C3117C223D7E4A00B1F920 /* MyDatasourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatasourceAndDelegate.swift; sourceTree = "<group>"; };
 		18C3117F223DA7F400B1F920 /* RowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowsViewModel.swift; sourceTree = "<group>"; };
 		18C31182223DBDA700B1F920 /* Boxed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxed.swift; sourceTree = "<group>"; };
 		18C31184223DBE5400B1F920 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			children = (
 				18C3115C223D7E1D00B1F920 /* AppDelegate.swift */,
 				18C3115E223D7E1D00B1F920 /* ViewController.swift */,
-				18C3117C223D7E4A00B1F920 /* MyDatasource.swift */,
+				18C3117C223D7E4A00B1F920 /* MyDatasourceAndDelegate.swift */,
 				18C31184223DBE5400B1F920 /* MyCell.swift */,
 				18C3117F223DA7F400B1F920 /* RowsViewModel.swift */,
 				18C31181223DBD8B00B1F920 /* Utility */,
@@ -226,7 +226,7 @@
 				18C31183223DBDA700B1F920 /* Boxed.swift in Sources */,
 				18C31180223DA7F400B1F920 /* RowsViewModel.swift in Sources */,
 				18C3115D223D7E1D00B1F920 /* AppDelegate.swift in Sources */,
-				18C3117D223D7E4A00B1F920 /* MyDatasource.swift in Sources */,
+				18C3117D223D7E4A00B1F920 /* MyDatasourceAndDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,9 @@
 
 import UIKit
 
-final class MyDatasource<T: CellRowViewModel>: NSObject, UITableViewDataSource, UITableViewDelegate {
+typealias PressableCellRowViewModel = CellRowViewModel & CellViewModelPressible
+
+final class MyDatasourceAndDelegate<T: PressableCellRowViewModel>: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     private let datas: [T]
     
@@ -39,7 +41,7 @@ final class MyDatasource<T: CellRowViewModel>: NSObject, UITableViewDataSource, 
     // MARK: - UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        datas[indexPath.row].cellPressed?()
     }
     
 }

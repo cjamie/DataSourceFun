@@ -13,18 +13,21 @@ typealias MyData = (numberOfWords: Int, sentence: String)
 
 final class ViewController: UIViewController {
 
+    private let datasource: MyDatasourceAndDelegate<MyCellViewModel> = makeDataSource()
+
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             datasource.register(with: tableView)
             tableView.dataSource = datasource
+            tableView.delegate = datasource
         }
     }
+}
 
-    private let datasource: MyDatasource<MyCellViewModel> = makeDataSource()
-    
-    // MARK: - Helpers
-    
-    static private func makeDataSource() -> MyDatasource<MyCellViewModel> {
+// MARK: - Helpers
+
+extension ViewController {
+    static private func makeDataSource() -> MyDatasourceAndDelegate<MyCellViewModel> {
         let datas: [MyData] = [
             (1, "The"),
             (2, "The quick"),
@@ -49,6 +52,6 @@ final class ViewController: UIViewController {
             )
         }
         
-        return MyDatasource<MyCellViewModel>(viewModels)
+        return MyDatasourceAndDelegate<MyCellViewModel>(viewModels)
     }
 }

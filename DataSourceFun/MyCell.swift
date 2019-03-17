@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MyCellViewModel: CellRowViewModel {
+class MyCellViewModel: CellRowViewModel, CellViewModelPressible {
     let headlineText: String
     let bodyText: String
     var colored: Boxed<Bool>
     let cellIdentifier: String
+    
+    var cellPressed: (() -> Void)?
 
     init(headlineText: String, bodyText: String, colored: Bool){
         self.headlineText = headlineText
@@ -40,11 +42,16 @@ final class MyCell: UITableViewCell, CellConfigurable {
     
     func setup(viewModel: CellRowViewModel) {
         guard let viewModel = viewModel as? MyCellViewModel else { return }
+        
         headlineLabel.text = viewModel.headlineText
         bodyLabel.text = viewModel.bodyText
         
         viewModel.colored.bind { [weak self] isChanged in
             self?.backgroundColor = isChanged ? .red : .yellow
+        }
+        
+        viewModel.cellPressed = { 
+            viewModel.colored.value.toggle()
         }
     }
     
