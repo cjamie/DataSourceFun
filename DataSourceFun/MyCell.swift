@@ -50,7 +50,7 @@ final class MyCell: UITableViewCell, CellConfigurable {
             self?.backgroundColor = isChanged ? .red : .yellow
         }
         
-        viewModel.cellPressed = { 
+        viewModel.cellPressed = {
             viewModel.colored.value.toggle()
         }
     }

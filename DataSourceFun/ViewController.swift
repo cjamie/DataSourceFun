@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 typealias MyData = (numberOfWords: Int, sentence: String)
 
 final class ViewController: UIViewController {
@@ -40,6 +39,7 @@ extension ViewController {
             (9, "The quick brown fox jumps over the lazy dog")
         ]
         
+        // NOTE: - the init is not optional, but most cases it should be an optional init and use compact map
         let viewModels = datas.compactMap {
             MyCellViewModel(
                 headlineText: String.localizedStringWithFormat(
