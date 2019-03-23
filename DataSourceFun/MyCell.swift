@@ -8,15 +8,18 @@
 
 import UIKit
 
-class MyCellViewModel: CellRowViewModel, CellViewModelPressible {
+final class MyCellViewModel: CellRowViewModel, CellViewModelPressible {
     let headlineText: String
     let bodyText: String
     var colored: Boxed<Bool>
+    
+    // MARK: - CellRowViewModel
     let cellIdentifier: String
     
+    // MARK: - CellViewModelPressible
     var cellPressed: (() -> Void)?
-
-    init(headlineText: String, bodyText: String, colored: Bool){
+    
+    init(headlineText: String, bodyText: String, colored: Bool) {
         self.headlineText = headlineText
         self.bodyText = bodyText
         self.colored = Boxed(colored)

@@ -12,7 +12,7 @@ typealias MyData = (numberOfWords: Int, sentence: String)
 
 final class ViewController: UIViewController {
 
-    private let datasource: MyDatasourceAndDelegate<MyCellViewModel> = makeDataSource()
+    private let datasource = makeDataSource()
 
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
